@@ -2,36 +2,12 @@ const APP_VERSION = "1.0";
 
 const APP_CHANGELOG = [
   {
-    version: "1.2",
-    groups: [
-      {
-        title: "Der Reiter „Info“ erklärt jetzt, was die App wirklich tut",
-        items: [
-          "Dort stand bisher ein einzelner Satz. Jetzt steht da, wofür die einzelnen Reiter da sind, was die App mit den Eingaben macht und wo etwas anderes hingehört.",
-          "Am Funktionsumfang ändert sich nichts — nur an der Beschreibung."
-        ]
-      }
-    ]
-  },
-  {
-    version: "1.1",
-    groups: [
-      {
-        title: "Am Handy",
-        items: [
-          "Bisher brach die Reiterleiste selbst um, die rechte Reiter-Gruppe darin aber nicht: Sie rutschte als ein Stück in die zweite Zeile und lief dort weiter über den rechten Rand hinaus. Jetzt bricht auch sie um, sobald sie zu breit wird. Zu sehen ist das nur, wenn genug Reiter nebeneinanderstehen — bis dahin sieht alles aus wie bisher."
-        ]
-      }
-    ]
-  },
-  {
     version: "1.0",
     groups: [
       {
-        title: "Trainer-Liste",
+        title: "Trainer-Einträge",
         items: [
-          "Übersicht aller Einträge mit Name, Vorname und Geburtsdatum, dazu je ein Kennzeichen für Eintritt und Austritt: offen, in Arbeit oder abgeschlossen.",
-          "Das Datum steht direkt unter dem Kennzeichen.",
+          "Übersicht aller Einträge mit Name, Vorname und Geburtsdatum, dazu je ein Kennzeichen für Eintritt und Austritt: offen, in Arbeit oder abgeschlossen. Das zugehörige Datum steht direkt darunter.",
           "Suche nach Namen, kombinierbar mit den Statusfiltern für Eintritt und Austritt.",
           "Sortierbar nach Name, Geburtsdatum, Eintritt und Austritt — ein Klick auf die Spalte kehrt die Richtung um.",
           "Einträge anlegen und löschen, letzteres mit Rückfrage."
@@ -40,17 +16,24 @@ const APP_CHANGELOG = [
       {
         title: "Stammdaten",
         items: [
-          "Name, Vorname, Geburtsdatum, Anschrift, Telefon und E-Mail-Adresse.",
+          "Name, Vorname, Geburtsdatum, Anschrift, Telefonnummer und E-Mail-Adresse.",
           "Dazu je ein Häkchen und ein Datum für Trainerzugang und Trainerabgang."
         ]
       },
       {
         title: "Checklisten für Zugang und Abgang",
         items: [
-          "Beide Checklisten entsprechen der Papiervorlage, einschließlich aller Unterpunkte.",
+          "Beide Checklisten entsprechen der Papiervorlage, einschließlich aller Unterpunkte — von der Schlüsselübergabe über das erweiterte Führungszeugnis bis zum Verhaltenskodex.",
           "Jeder Punkt ist einzeln abhakbar. Bei Z-Schlüssel und Schrankschlüssel erscheint zusätzlich ein Feld für die Schlüsselnummer.",
           "Bemerkungsfeld sowie die Angabe „abgeschlossen“ oder „konnte nicht abgeschlossen werden, weil …“ mit Grund.",
           "Ort und Datum der Abschluss-Unterschrift."
+        ]
+      },
+      {
+        title: "Unterschriften",
+        items: [
+          "Je Abschnitt eine Unterschrift von Trainer oder Betreuer und eine der Geschäftsstelle — mit Maus, Finger oder Stift.",
+          "Eine Unterschrift lässt sich wieder löschen."
         ]
       },
       {
@@ -62,20 +45,12 @@ const APP_CHANGELOG = [
         ]
       },
       {
-        title: "Unterschriften",
-        items: [
-          "Je Abschnitt eine Unterschrift von Trainer oder Betreuer und eine der Geschäftsstelle — mit Maus, Finger oder Stift.",
-          "Eine Unterschrift lässt sich wieder löschen.",
-          "Die Unterschriften liegen als eigene Dateien in der Cloud statt in der Datenliste. Dadurch bleibt die Liste klein und das automatische Speichern schnell, gleich wie viele Checklisten unterschrieben sind."
-        ]
-      },
-      {
         title: "Wer darf was",
         items: [
           "Sehen: alle Checklisten vollständig, aber schreibgeschützt — die Felder sind ausgegraut, die Knöpfe zum Anlegen und Löschen fehlen.",
           "Bearbeiten: Einträge anlegen und löschen, Felder und Unterschriften pflegen, Abschnitte sperren und entsperren.",
           "Administrieren: der Reiter „Einstellungen“.",
-          "Der Reiter „Info“ ist für alle sichtbar."
+          "Der Reiter „Info“ ist für alle sichtbar. Dort stehen eine Kurzbeschreibung, diese Änderungsliste und der Datenschutzhinweis des Vereins."
         ]
       },
       {
@@ -83,7 +58,7 @@ const APP_CHANGELOG = [
         items: [
           "Die Reiterleiste bricht am Handy um, statt seitlich aus dem Bild zu laufen — auch die hinteren Reiter sind auf schmalen Bildschirmen erreichbar.",
           "Auch die Umschaltung zwischen Zugang und Abgang bricht um, statt rechts aus dem Bild zu laufen.",
-          "Eingabefelder sind mindestens 16 Pixel groß, damit der iPhone-Browser beim Antippen nicht ungefragt in die Seite hineinzoomt und verschoben stehen bleibt.",
+          "Eingabefelder sind groß genug, dass der iPhone-Browser beim Antippen nicht ungefragt in die Seite hineinzoomt.",
           "Unterschreiben funktioniert mit dem Finger."
         ]
       },
