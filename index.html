@@ -58,11 +58,11 @@
           </div>
           <div class="btn-row" style="justify-content:flex-start; align-items:flex-end; margin-top:14px; margin-bottom:22px;">
             <div class="form-field" style="max-width:260px;">
-              <label>Suche</label>
+              <label for="liste-search-input">Suche</label>
               <input type="text" id="liste-search-input" placeholder="Name…" />
             </div>
             <div class="form-field" style="max-width:200px;">
-              <label>Eintritt-Status</label>
+              <label for="liste-filter-zugang">Eintritt-Status</label>
               <select id="liste-filter-zugang">
                 <option value="">Alle</option>
                 <option value="offen">Offen</option>
@@ -71,7 +71,7 @@
               </select>
             </div>
             <div class="form-field" style="max-width:200px;">
-              <label>Austritt-Status</label>
+              <label for="liste-filter-abgang">Austritt-Status</label>
               <select id="liste-filter-abgang">
                 <option value="">Alle</option>
                 <option value="offen">Offen</option>
@@ -104,12 +104,12 @@
             </div>
           </div>
           <div class="form-grid">
-            <div class="form-field"><label>Name *</label><input type="text" id="d-name" /></div>
-            <div class="form-field"><label>Vorname *</label><input type="text" id="d-vorname" /></div>
-            <div class="form-field"><label>Geburtsdatum</label><input type="date" id="d-geburtsdatum" /></div>
-            <div class="form-field"><label>Telefonnummer</label><input type="text" id="d-telefon" /></div>
-            <div class="form-field" style="grid-column: 1 / -1;"><label>Anschrift</label><input type="text" id="d-anschrift" /></div>
-            <div class="form-field"><label>E-Mail-Adresse</label><input type="email" id="d-email" /></div>
+            <div class="form-field"><label for="d-name">Name *</label><input type="text" id="d-name" /></div>
+            <div class="form-field"><label for="d-vorname">Vorname *</label><input type="text" id="d-vorname" /></div>
+            <div class="form-field"><label for="d-geburtsdatum">Geburtsdatum</label><input type="date" id="d-geburtsdatum" /></div>
+            <div class="form-field"><label for="d-telefon">Telefonnummer</label><input type="text" id="d-telefon" /></div>
+            <div class="form-field" style="grid-column: 1 / -1;"><label for="d-anschrift">Anschrift</label><input type="text" id="d-anschrift" /></div>
+            <div class="form-field"><label for="d-email">E-Mail-Adresse</label><input type="email" id="d-email" /></div>
           </div>
           <div class="btn-row" style="justify-content:flex-start; gap:24px;">
             <label class="checkbox-label"><input type="checkbox" id="d-header-zugang-checked" /> Trainerzugang</label>
@@ -128,7 +128,7 @@
           <div class="subtab-section active" id="subtab-zugang">
             <div id="zugang-checklist"></div>
             <div class="form-field" style="margin-top:14px;">
-              <label>Bemerkungen</label>
+              <label for="zugang-bemerkungen">Bemerkungen</label>
               <textarea id="zugang-bemerkungen" rows="3"></textarea>
             </div>
             <div class="form-field" style="margin-top:10px;">
@@ -141,8 +141,8 @@
               <label class="checkbox-label"><input type="checkbox" id="zugang-abgeschlossen" /> Einarbeitung ist abgeschlossen und wird in der Geschäftsstelle während der gesamten Vertragslaufzeit (einschließlich direkter Vertragsverlängerungen) archiviert</label>
             </div>
             <div class="form-grid" style="margin-top:14px;">
-              <div class="form-field"><label>Ort</label><input type="text" id="zugang-ort" /></div>
-              <div class="form-field"><label>Datum</label><input type="date" id="zugang-datum" /></div>
+              <div class="form-field"><label for="zugang-ort">Ort</label><input type="text" id="zugang-ort" /></div>
+              <div class="form-field"><label for="zugang-datum">Datum</label><input type="date" id="zugang-datum" /></div>
             </div>
             <div class="signature-row">
               <div class="signature-box">
@@ -169,7 +169,7 @@
             <p class="muted" id="abgang-info-text" style="margin-bottom:14px;"></p>
             <div id="abgang-checklist"></div>
             <div class="form-field" style="margin-top:14px;">
-              <label>Bemerkungen</label>
+              <label for="abgang-bemerkungen">Bemerkungen</label>
               <textarea id="abgang-bemerkungen" rows="3"></textarea>
             </div>
             <div class="form-field" style="margin-top:10px;">
@@ -182,8 +182,8 @@
               <label class="checkbox-label"><input type="checkbox" id="abgang-abgeschlossen" /> Trainer-/Betreuerabgang ist abgeschlossen und wird in der Geschäftsstelle 3 Jahre datenschutzkonform archiviert</label>
             </div>
             <div class="form-grid" style="margin-top:14px;">
-              <div class="form-field"><label>Ort</label><input type="text" id="abgang-ort" /></div>
-              <div class="form-field"><label>Datum</label><input type="date" id="abgang-datum" /></div>
+              <div class="form-field"><label for="abgang-ort">Ort</label><input type="text" id="abgang-ort" /></div>
+              <div class="form-field"><label for="abgang-datum">Datum</label><input type="date" id="abgang-datum" /></div>
             </div>
             <div class="signature-row">
               <div class="signature-box">
