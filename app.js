@@ -822,7 +822,7 @@ function checklistItemRowHtml(item, section, isSubItem) {
   const verantwortlich = !isSubItem && item.verantwortlich
     ? `<span class="checklist-verantwortlich">${escapeHtml(item.verantwortlich)}</span>` : "";
   const textInput = item.textInput
-    ? `<input type="text" class="checklist-item-text${isChecked ? " visible" : ""}" data-item-text-id="${escapeHtml(item.id)}" placeholder="${escapeHtml(item.textInputPlaceholder || "")}" value="${escapeHtml(section.itemTexts[item.id] || "")}" />`
+    ? `<input type="text" aria-label="${escapeHtml(item.textInputPlaceholder || item.label)}" class="checklist-item-text${isChecked ? " visible" : ""}" data-item-text-id="${escapeHtml(item.id)}" placeholder="${escapeHtml(item.textInputPlaceholder || "")}" value="${escapeHtml(section.itemTexts[item.id] || "")}" />`
     : "";
   return `
     <div class="checklist-item-row">

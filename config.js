@@ -2,6 +2,18 @@ const APP_VERSION = "1.0";
 
 const APP_CHANGELOG = [
   {
+    version: "1.1",
+    groups: [
+      {
+        title: "Vorleseprogramme finden das Textfeld neben einem Haken",
+        items: [
+          "Das Textfeld, das zu einzelnen Checklisten-Punkten gehört, hatte keinen Namen — nur einen Platzhalter, und der ist bei manchen Punkten leer.",
+          "Es trägt jetzt den Platzhaltertext als Namen, und wo keiner hinterlegt ist, den Text des Punktes selbst. Am Bildschirm ändert sich nichts."
+        ]
+      }
+    ]
+  },
+  {
     version: "1.0",
     groups: [
       {
