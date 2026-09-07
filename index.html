@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>📋 TrainerCheckliste</title>
 <meta name="theme-color" content="#1a56a0" />
-<link rel="stylesheet" href="style.css?v=1.1" />
+<link rel="stylesheet" href="style.css?v=1.2" />
 </head>
 <body>
 
@@ -213,7 +213,7 @@
     <!-- ---------- Info ---------- -->
     <section class="tab-section" id="tab-info">
       <div class="card">
-        <h2>Über die TrainerCheckliste <span class="version-badge" id="version-badge-2"></span></h2>
+        <h2>Über die TrainerCheckliste</h2>
         <p class="muted">
             Checkliste für das On- und Offboarding von Trainern.
             Je Person ein Eintrag mit Eintritt- und Austritt-Status — so bleibt sichtbar, was noch
@@ -221,9 +221,12 @@
             Trainer/Betreuer und von der Geschäftsstelle, jeweils mit Datum.
           </p>
       </div>
+      <!-- Was die App kann. Quelle: APP_FUNKTIONEN in config.js -- bewusst
+           getrennt von APP_CHANGELOG, das seit 07.09.2026 nicht mehr angezeigt
+           wird. Hier steht der Zustand, dort die Historie. -->
       <div class="card">
-        <h2>Änderungen</h2>
-        <div id="changelog-list"></div>
+        <h2>Funktionen</h2>
+        <div id="funktionen-list"></div>
       </div>
     
       <div class="card" id="ds-info-karte">
@@ -264,9 +267,9 @@
 </div>
 
 <script src="checklist-schema.js?v=1.0"></script>
-<script src="config.js?v=1.1"></script>
+<script src="config.js?v=1.2"></script>
 <script src="db.js?v=1.0"></script>
 <script src="signature-pad.js?v=1.0"></script>
-<script src="app.js?v=1.1"></script>
+<script src="app.js?v=1.2"></script>
 </body>
 </html>

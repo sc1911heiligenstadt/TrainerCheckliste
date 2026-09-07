@@ -342,10 +342,27 @@ function renderAll() {
   renderListe();
 }
 
+// Was die TrainerCheckliste kann -- die Karte "Funktionen" im Info-Reiter.
+// Nutzt dieselben CSS-Klassen wie frueher die Aenderungsliste
+// (.changelog-group, .cg-title, .cg-items), damit beide Karten gleich aussehen.
+function renderFunktionen() {
+  const list = document.getElementById("funktionen-list");
+  if (!list) return;
+  list.innerHTML = APP_FUNKTIONEN.map((g) => `
+    <div class="changelog-group">
+      <div class="cg-title">${escapeHtml(g.title)}</div>
+      <ul class="cg-items">${g.items.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul>
+    </div>
+  `).join("");
+}
+
+// Die Aenderungsliste steht seit 07.09.2026 NICHT mehr im Info-Reiter: dort
+// sollen nur die Funktionen der App stehen. APP_CHANGELOG bleibt in config.js
+// gepflegt und wird weiter geschrieben -- es ist die Quelle fuer die Anleitung
+// und fuer die Neuigkeiten-Meldungen. Diese Funktion steigt darum still aus,
+// wenn es das Ziel nicht gibt, statt beim Seitenstart abzubrechen.
 function renderVersionInfo() {
-  document.querySelectorAll("#version-badge, #version-badge-2").forEach((el) => {
-    if (el) el.textContent = "v" + APP_VERSION;
-  });
+  renderFunktionen();
   const list = document.getElementById("changelog-list");
   if (!list) return;
   list.innerHTML = APP_CHANGELOG.map((entry) => `
